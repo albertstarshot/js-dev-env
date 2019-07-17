@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "yeah",
   "scripts": {
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel open:src",
+    "open:src": "babel-node buildScripts/srcServer.js"
   },
   "author": "someone",
   "license": "wtf",
